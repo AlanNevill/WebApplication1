@@ -1,0 +1,7 @@
+# robots.txt
+
+# Allow the entire CO.UK site for all crawlers.
+User-agent: *
+Allow: /
+
+Sitemap: http://www.meadowgreenfarm.co.uk/sitemap.txt

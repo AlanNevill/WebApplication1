@@ -2,36 +2,475 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Home Page - WebApplication1</title>
+    <title>Meadow Green Farm Holiday Cottages</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The home page of my website" />
+    <meta name="description" content="Meadow Green Farm v3" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/Sheep-icon.jpg">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/site.css" />
+
+    <!-- Google tracking code -->
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-22684033-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
 </head>
 <body>
 
-    <div class="wrapper">
-        <header role="banner">
-            <nav class="container">
-                <ul>
-                    <li><a href="/">WebApplication1</a></li>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
+    <div class="container">
+        <!-- container has the media queries for responsive -->
+
+        <img class="img img-fluid" src="images/Banner_v3.svg" width="100% \9;" alt="Meadow Green Farm banner">
+
+        <nav class="navbar navbar-expand-md sticky-top navbar-light bg-light main-nav">
+
+            <div class="navbar-collapse collapse nav-content order-2" id="navbarSupportedContent">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/content/meadowsweet.html">Meadowsweet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/content/cowslip.html">Cowslip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/content/cornflower.html">Cornflower</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Facilities
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="Preview">
+                            <a class="dropdown-item" href="/content/facilitiesSummary.html">Summary</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/content/facilitiesBeachHut.html">The Beach Hut</a>
+                            <a class="dropdown-item" href="/content/facilitiesPlayArea.html">Childrens' play area</a>
+                            <a class="dropdown-item" href="/content/facilitiesBabies.html">Babies &amp; toddlers</a>
+                            <a class="dropdown-item" href="/content/facilitiesAnimals.html">Our animals</a>
+                            <a class="dropdown-item" href="/content/facilitiesLakesWoods.html">The lakes and trails</a>
+                        </div>
+                    </li>
                 </ul>
-            </nav>
-        </header>
+            </div>
 
-        <main class="container">
-            <h1>Home Page</h1>
-            <p>This is the index.cshtml</p>
-        </main>
-    </div>
+            <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto order-1 order-md-2">
+                <li class="nav-item"><a class="nav-link" href="#"><img class="img img-fluid" src="images/Sheep-icon40.jpg" alt="Meadow Green Farm logo"></a></li>
 
-    <footer>
+                <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </ul>
+
+            <div class="ml-auto navbar-collapse collapse nav-content order-3 order-md-3">
+                <ul class="ml-auto nav navbar-nav">
+
+                    <li class="nav-item"><a class="nav-link" href="/content/attractions.html">Things to do</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Availability &amp; prices
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="Preview">
+                            <a class="dropdown-item" href="/content/bookingThisYear.html">bookingThisYear</a>
+                            <a class="dropdown-item" href="/content/bookingNextYear.html">bookingNextYear</a>
+                        </div>
+                    </li>
+                    <!--<li class="nav-item"><a class="nav-link" href="visitorsBook.html">Visitors' book</a></li>-->
+                    <li class="nav-item"><a class="nav-link" href="/content/contact.html">Find us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="container text-center">
+            <!-- container used within outer container to give white border -->
+
+
+            <div id="carouselExampleIndicators" class="carousel carousel-fade" data-ride="carousel" data-interval="3000">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner embed-responsive" role="listbox">
+                    <div class="carousel-item active">
+                        <img class="img-fluid w-100" src="images/home/Cowslip garden 1 1000.jpg" alt="Cowslip cottage">
+                        <!--<div class="carousel-caption">
+                            <h3>First slide</h3>
+                            <p>images/home/DSC00338 h400.jpg</p>
+                        </div>-->
+                    </div>
+                    <div class="carousel-item">
+                        <img class="lazy img-fluid w-100" src="images/home/Cornflower exterior 1000.jpg" alt="Cornflower cottage">
+                        <!--<div class="carousel-caption">
+                            <h3>Second slide</h3>
+                            <p>images/home/DSC00377 h400.jpg</p>
+                        </div>-->
+                    </div>
+                    <div class="carousel-item">
+                        <img class="lazy img-fluid w-100" src="images/home/Meadowswett exterior 3 1000.jpg" alt="Meadowsweet cottage">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="lazy img-fluid w-100" src="images/home/newLambs.jpg" alt="New lambs">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="lazy img-fluid w-100" src="images/home/Play area 9 1000.jpg" alt="Childrens play area">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <section>
+                <!--<h4 style="background-color: #00C851;">Welcome to Meadow Green Farm</h4>-->
+
+                <p class="lead">
+                    Meadow Green Farm nestles in 23 acres of rolling green meadows in the Pembrokeshire National Park, on the outskirts of the pretty and bustling seaside village of Saundersfoot.
+                <p />
+                <p>
+                    There are three contemporary self-catering cottages to provide you with an enchanting holiday. Each is fully stocked to provide a home away from home, and have their own private sunny gardens with tables, chairs and BBQs.
+                <p />
+                <p>
+                    Everyone is well catered for at Meadow Green Farm: for couples a quiet haven of tranquillity. For families we have a trampoline, swings, a playhouse as well as numerous outdoor and indoor toys, books and board games to keep children of all ages entertained. Animal lovers may bring their own dogs, pet our friendly sheep and collect eggs daily from our free-range chickens. For those who love the outdoors, our two lakes may be fished, and you are free to explore our meadows and woods, discovering the many footpaths across the land.
+                <p />
+                <p>
+                    Meadow Green Farm is within walking distance of Saundersfoot village, many picturesque beaches and the stunning coastal path. Indeed, we are just a short drive to numerous blue flag beaches including Barafundle Bay and fantastic seaside resorts such as Tenby, Pendine and Laugharne. As well as family attractions including Folly Farm, Tenby Dinosaur Park, Pembroke Castle and Oakwood Theme Park.
+                </p>
+
+                <h3 class="text-center">We look forward to welcoming you to Meadow Green Farm</h3>
+            </section>
+
+            <div class="container text-white" style="background-color: #00C851;">
+                <p class="h1">Guest Book</p>
+                <div id="carouselContent" class="carousel slide" data-ride="carousel" data-interval="4000">
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title"></h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;A great deal of thought and detail goes into making this cottage in a class of its own.&quot;
+                                        <footer>Lesley and Jacquie<cite title=""> - 2017</cite></footer>
+                                    </blockquote>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title"></h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;Another wonderful stay at our favourite holiday spot! We just love this place, spotless house, fantastic facilities, everything thought of for children, peaceful, amazing welcome, and lovely friendly family who make it all happen… Can’t wait to come back.&quot;
+                                        <footer>The Ball Family<cite title=""> - 2017</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title"></h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;Wonderful week. Many thanks for sharing your little bit of heaven!!.&quot;
+                                        <footer>Julie and Mike<cite title=""> - 2017</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title"></h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;We love visiting Saundersfoot but this cottage is the best we’ve stayed in by far. Just minutes from Saundersfoot sea front. Great walks from Saundersfoot over to Stepaside, great pub at Wisemans Bridge, to stop off for a drink/food or just to sit and take in the wonderful views. We also took a drive out to Barafundle Bay, so worth a visit stunning. Golden sands and Crystal-clear waters. Only booked a 4 night stay, so wished I’d booked a week now. Thank you all for a lovely stay.&quot;
+                                        <footer>The Pensom Family<cite title=""> - 2017</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title"></h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;Fabulous house probably the best we’ve rented in ten years. Very helpful hosts. We’ve had lovely picnics at Folly Farm and Tenby South Beach. The boys have loved playing with Maisy and the beach hut. We would love to come back and share with friends.&quot;
+                                        <footer>The Bini Family<cite title=""> - 2017</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <img class="card-img-top" src="images/home/image4044.png" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">The 50 coolest holiday cottages</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;No. 28 Back to nature, Pembrokeshire, sleeps 4<br />
+                                        Cowslip Cottage has been scrubbed up to a shiny finish and is part of a trio
+                                        that occupies 23 acres just outside Saundersfoot, one of Wales’s most popular seaside resorts.
+                                        The pretty whitewashed hideaway is decorated with fresh white linen and has everything from wifi to a children’s play area.
+                                        Guests have free access to rolling fields, fishing lakes and streamside walks, filled with wildlife.&quot;
+                                        <footer>By Susan d'Arcy <cite title="The Sunday Times - The 50 coolest holiday cottages">Published: 16 January 2011</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card card-inverse mx-auto mb-3 w-75">
+                                <div class="card-block ">
+                                    <h4 class="card-title">Cornflower</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;Another lovely holiday on our second stay in cornflower cottage. We had a
+                                        fantastic time exploring the area again. Robs food was delicious and highly
+                                        recommended. Sara enjoyed all the books and toys in the beach hut, the swings
+                                        and of course playing with Maisie! Hope to return soon it certainly is a home
+                                        from home.&quot;
+                                        <footer>Liz, Paul &amp; Sara <cite title="Cornflower"> - September 2013</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title">Meadowsweet</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;Thank you for yet another great holiday, Meadowsweet is fantastic!!! (love the
+                                        comfy bed :) and the optional car bed as well!. We all had a lovely holiday &amp;
+                                        enjoyed Robs great cooking. Thanks again for such a lovely warm welcome again
+                                        and will see you all soon!!&quot;
+                                        <footer>Steve &amp; family <cite title="Meadowsweet"> - August 2013</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title">Cowslip</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;We have had a lovely weeks holiday, starting off with a really friendly welcome
+                                        from Gwen. We couldn&#39;t have asked for more in a cottage and the welsh cakes were
+                                        delicious. We loved collecting eggs and now want chickens too! We also loved
+                                        playing with Maisie. What a lovely place to have a holiday. Harvey has also had
+                                        a fantastic first holiday - thank you so much - I&#39;m sure we&#39;ll be back.&quot;
+                                        <footer>David, Juliet, Olivia, Jasmine &amp; Harvey the dog <cite title="Cowslip"> - August 2013</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title">Cornflower</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;We have had a lovely week staying in Cornflower cottage, it&#39;s been decorated
+                                        tastefully to a great standard and has everything you need. Gwen is wonderfully
+                                        welcome and really looks after you (Thank you for doing some washing for me)
+                                        Rob&#39;s cooking is a wonderful treat. It is also a great location, close to lots
+                                        of beaches &amp; amenities. This would definitely be a place we come back to :) &quot;
+                                        <footer>Phil &amp; family <cite title="Cornflower"> - August 2013</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title">Cowslip</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;Lovely views and comfortable holiday home. Excellent food from Rob and Gwen.
+                                        Great beaches and beautiful walks. The dog had a great time too. The lilly ponds
+                                        are a must see. The sun was a bonus. we will return!&quot;
+                                        <footer>Rosemary &amp; Ian <cite title="Cowslip"> - July 2013</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title">Cowslip</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;! What more could you ask for in a holiday home? Great
+                                        cottage....fantastic views....wonderful food....excellent hosts. Too many
+                                        fantastic beaches to mention all are great.&quot;
+                                        <footer>Rachel &amp; family <cite title="Cowslip"> - July 2013</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title">Meadowsweet</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;This is our third visit to Meadow Green Farm and yet again we have thoroughly enjoyed our stay here!
+                                        Thank you for making us feel most welcome.&quot;
+                                        <footer>Wakeham Family <cite title="Meadowsweet"> - June 2013</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title">Meadowsweet</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;Don&#39;t want to go home! Had such an amazing week staying in Meadowseet, you could
+                                        not ask for better accommodation &amp; facilities for everyone - especially the
+                                        beach hut for our granddaughter, so much to do &amp; so well equipped. A big thank
+                                        you to our personal chef Rob, your culinary skills were second to none. We will
+                                        be back - Simply amazing!&quot;
+                                        <footer>Miles &amp; Ford Families <cite title="Meadowsweet"> - June 2013</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title">Cornflower</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;We were recommended to come to the cottage by our cousin who came last
+                                        year, and indeed came back at the same time as us. The cottage and peaceful
+                                        location are lovely and the hospitality is wonderful. We were told not to
+                                        bring much for the children as everything would be here for them and that
+                                        was true! the children hardly played with any of their own toys! They loved
+                                        playing with Maisie aswell. Great holiday and would love to come back again.&quot;
+                                        <footer>Jane &amp; family <cite title="Cornflower"> - May 2013</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title">Meadowsweet</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;Hi, well what can I say; from the minute we got here we all loved it, even Benji our dog. The cottage is beautiful;
+                                        everything you could possibly need.
+                                        Thank you Rob for cooking us some lovely food. Brian's 60th, we all made is special for him.
+                                        We will be back later on this year. Love Storer family xxx&quot;
+                                        <footer>Storer Family <cite title="Meadowsweet"> - May 2013</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title">Cornflower</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;Had a great few days in October in Cornflower Cottage.
+                                        We were made to feel so welcome and the cottage was so cosy and comfortable.
+                                        Didn't manage to sample Rob's cooking which is obviously very popular from the comments in the visitors book but will hopefully get the opportunity next time!&quot;
+                                        <footer>Clare &amp; family <cite title="Cornflower"> - November 2012</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title">Cornflower</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;We had a wonderful week staying at Cornflower Cottage, what a lovely place! A big thank you to Gwen, Alan, Rob &amp
+                                        Granddad for making us feel so welcome - we hope to see you again next year.
+                                        The Madge Family x PS. The boys miss Maisie!&quot;
+                                        <footer>Maddy Fuller <cite title="Cornflower"> - September 2012</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-auto mb-3 w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title">Cowslip</h4>
+                                    <blockquote class="card-blockquote">
+                                        &quot;Our third time here and everything brilliant as usual, the lovely warm welcome
+                                        and all the little touched that mean so much. Rosie of course had a wonderful time through the meadows.&quot;
+                                        <footer>Heather and Phil <cite title="Cowslip"> - September 2012</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+        </main> <!-- end of inner container -->
+
+    </div>  <!-- end of outer container -->
+
+    <footer class="footer">
         <div class="container">
-            <span>&copy; 2017 - WebApplication1</span>
+            <p style="margin-bottom:0px"> Please email or call to find out about booking one of our cottages
+            <p style="margin-bottom:0px"> <img class="myFooterIcons" alt="Phone icon" src="/images/phone-icon.svg" />Tel: 01834 810107
+            <p style="margin-bottom:0px"> <img class="myFooterIcons" alt="Phone icon" src="/images/gmail_icon.svg" />email: <a href="mailto:meadowgreenfarm@gmail.com">meadowgreenfarm@gmail.com</a>
+            <p style="margin-bottom:0px">
+                <a href="http://www.facebook.com/pages/Meadow-Green-Farm-Holiday-Cottages/162758367090594">
+                    <img class="myFooterIcons" alt="facebook icon" src="/images/facebook.svg" />Meadow Green Farm Holiday Cottages
+                </a>
+            </p>
+            <p style="margin-bottom:0px">
+                <a href="https://www.instagram.com/meadowgreenfarm/?hl=en">
+                    <img class="myFooterIcons" alt="Instagram icon" src="/images/instagram_icon.svg" />meadow green farm
+                </a>
+            </p>
+            <p style="margin-bottom:0px">Saundersfoot &nbsp;<img src="/images/filled circle.svg" />&nbsp; Pembrokeshire &nbsp;<img src="/images/filled circle.svg" />&nbsp; SA69 9ED
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.plugins.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="/js/site.js"></script>
+
+    <script>
+        // lazy load the other carousel images
+        $(document).ready(function () {
+            $(function () {
+                $('.lazy').Lazy();
+            });
+        })
+    </script>
+
 </body>
 </html>
