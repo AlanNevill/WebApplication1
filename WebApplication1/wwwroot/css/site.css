@@ -20,14 +20,6 @@ body {
     background-color: white;
 }
 
-/*body > .container {
-    padding: 100px 15px 0;
-}*/
-
-/*.footer > .container {
-    padding-right: 15px;
-    padding-left: 15px;
-}*/
 
 main {
     padding: 0 0;
@@ -35,20 +27,20 @@ main {
 }
 
 /* This ensures the footer is always located at the bottom of the page */
-
 .footer {
     position: absolute;
-    /*position: sticky;*/
     bottom: 0;
     height: 200px;
     width: 100%;
-    /*border-top: 2px solid grey;*/
-    border-bottom: 2px solid grey;
-    padding-top: .75rem;
-    background-color: #717174;
-    text-align: center;
+    border-bottom: 1px solid grey;
+    padding-top: .5rem;
 }
 
+/* close up line spacing in the footer */
+footer p {
+    margin-bottom: 0px;
+    text-align: center;
+}
 
 /* colour all links green */
 a {
@@ -60,11 +52,6 @@ nav a {
     font-size: 1.2em;
 }
     
-
-
-/*.myFooterPadding {
-    padding-top: 20px;
-}*/
 
 /* Carousel styles */
 
@@ -120,7 +107,7 @@ nav a {
 .active.carousel-item-prev,
 .carousel-item-next.carousel-item-left,
 .carousel-item-prev.carousel-item-right {
-    left: 0;
+    left: 0;    
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
@@ -129,17 +116,11 @@ nav a {
 }
 
 
-/* Footer Facebook svg icon */
-#facebookSVG {
-    width: 23px;
-    height: auto;
-}
-
 /* icons images in footer */
 .myFooterIcons {
     width: 23px;
     height: auto;
-    padding-right: 5px
+    padding-right: 5px;
 }
 
 /* set the background color for carousel of visitors book cards on home page */

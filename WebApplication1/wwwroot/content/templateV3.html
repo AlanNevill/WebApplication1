@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/site.css" />
 
     <!-- Google tracking code -->
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function () {
@@ -25,14 +25,14 @@
 
         ga('create', 'UA-22684033-1', 'auto');
         ga('send', 'pageview');
-    </script>
+    </script>-->
 
 </head>
 
 <body>
     <div class="container">
 
-        <img class="img img-fluid" src="../images/Banner_v3.svg" width="100% \9;" alt="Meadow Green Farm banner">
+        <img class="img img-fluid" src="../images/Banner.svg" width="100% \9;" alt="Meadow Green Farm banner">
 
         <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light main-nav">
 
@@ -102,41 +102,47 @@
 
         </main> <!-- end of inner container -->
 
-        <footer class="footer">
-            <div class="container">
-                <p style="margin-bottom:0px"> Please email or call to find out about booking one of our cottages
-                <p style="margin-bottom:0px"> <img class="myFooterIcons" alt="Phone icon" src="../images/phone-icon.svg" />Tel: 01834 810107
-                <p style="margin-bottom:0px"> <img class="myFooterIcons" alt="Email icon" src="../images/gmail_icon.svg" />email: <a href="mailto:meadowgreenfarm@gmail.com">meadowgreenfarm@gmail.com</a>
-                <p style="margin-bottom:0px">
-                    <a href="http://www.facebook.com/pages/Meadow-Green-Farm-Holiday-Cottages/162758367090594">
-                        <img class="myFooterIcons" alt="facebook icon" src="../images/facebook.svg" />Meadow Green Farm Holiday Cottages
-                    </a>
-                </p>
-                <p style="margin-bottom:0px">
-                    <a href="https://www.instagram.com/meadowgreenfarm/?hl=en">
-                        <img class="myFooterIcons" alt="Instagram icon" src="../images/instagram_icon.svg" />meadow green farm
-                    </a>
-                </p>
-                <p style="margin-bottom:0px">Saundersfoot &nbsp;<img src="../images/filled circle.svg" />&nbsp; Pembrokeshire &nbsp;<img src="../images/filled circle.svg" />&nbsp; SA69 9ED
-            </div>
-        </footer>
+    </div>
+
+    <?php 
+        echo "new from include/footer.html";
+        include ('include/footer.html');
+    ?>
+
+    <!--<footer class="footer">
+        <div class="container">
+            <p> Please email or call to find out about booking one of our cottages
+            <p> <img class="myFooterIcons" alt="Phone icon" src="../images/phone-icon.svg" />Tel: 01834 810107
+            <p> <img class="myFooterIcons" alt="Email icon" src="../images/gmail_icon.svg" />email: <a href="mailto:meadowgreenfarm@gmail.com">meadowgreenfarm@gmail.com</a>
+            <p>
+                <a href="http://www.facebook.com/pages/Meadow-Green-Farm-Holiday-Cottages/162758367090594">
+                    <img class="myFooterIcons" alt="facebook icon" src="../images/facebook.svg" />Meadow Green Farm Holiday Cottages
+                </a>
+            </p>
+            <p>
+                <a href="https://www.instagram.com/meadowgreenfarm/?hl=en">
+                    <img class="myFooterIcons" alt="Instagram icon" src="../images/instagram_icon.svg" />meadow green farm
+                </a>
+            </p>
+            <p>Saundersfoot &nbsp;<img src="../images/filled circle.svg" />&nbsp; Pembrokeshire &nbsp;<img src="../images/filled circle.svg" />&nbsp; SA69 9ED
+        </div>
+    </footer>-->
 
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.plugins.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="../js/site.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.plugins.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../js/site.js"></script>
 
-        <script>
-            // lazy load the other carousel images
-            $(document).ready(function () {
-                $(function () {
-                    $('.lazy').Lazy();
-                });
-            })
-        </script>
-
+    <!--<script>
+        // lazy load the other carousel images
+        $(document).ready(function () {
+            $(function () {
+                $('.lazy').Lazy();
+            });
+        })
+    </script>-->
 </body>
 </html>
