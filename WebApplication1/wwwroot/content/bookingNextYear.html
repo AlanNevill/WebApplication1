@@ -20,7 +20,7 @@
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g;
-            m.parentNode.insertBefore(a, m)
+            m.parentNode.insertBefore(a, m);
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-22684033-1', 'auto');
@@ -101,7 +101,7 @@
 
             <div class="row">
                 <div class="col-lg-4">
-                    <h3>bookingNextYear - Not yet available</h3>
+                    <h3>bookingNextYear</h3>
                 </div>
                 <div class="col-lg-2">
                     <h5 class="blank text-center">&nbsp;shaded=booked&nbsp;</h5>
@@ -111,70 +111,92 @@
                 </div>
             </div>
 
-            <table id="bookingTable" class="table table-sm table-striped table-bordered">
-                <thead class="thead-default">
-                    <tr><th>W/c Sat</th><th>Cornflower</th>                         <th>Cowslip</th>                            <th>Meadowsweet</th></tr>
+            <table id="bookingTable" class="table table-sm table-striped table-bordered" >
+                <thead class="">
+                    <tr >
+                        <th style="width:12%">W/c Sat</th>
+                        <th style="width:26%" colspan="2">Cornflower</th>
+                        <th style="width:26%" colspan="2">Cowslip</th>
+                        <th style="width:26%" colspan="2">Meadowsweet</th>
+                    </tr>
+                    <tr >
+                        <th style="width:12%"></th>
+                        <th style="width:13%">Day</th>
+                        <th style="width:13%">Week</th>
+                        <th style="width:13%">Day</th>
+                        <th style="width:13%">Week</th>
+                        <th style="width:13%">Day</th>
+                        <th style="width:13%">Week</th>
+                    </tr>
                 </thead>
                 <tbody>
-                    <tr><td>26 Jan</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>02 Feb</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>09 Feb</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>16 Feb</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>23 Feb</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>March</td> <td>Cornflower</td>                    <td>Cowslip</td>                <td>Meadowsweet</td></tr>
-                    <tr><td>02 Mar</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>09 Mar</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>16 Mar</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>23 Mar</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>30 Mar</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>April</td> <td>Cornflower</td>                    <td>Cowslip</td>                <td>Meadowsweet</td></tr>
-                    <tr><td>06 Apr</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>13 Apr</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>20 Apr</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>27 Apr</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>May</td> <td>Cornflower</td>                    <td>Cowslip</td>                <td>Meadowsweet</td></tr>
-                    <tr><td>04 May</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>11 May</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>18 May</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>25 May</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>June</td> <td>Cornflower</td>                    <td>Cowslip</td>                <td>Meadowsweet</td></tr>
-                    <tr><td>01 Jun</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>08 Jun</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>15 Jun</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>22 Jun</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>29 Jun</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>July</td> <td>Cornflower</td>                    <td>Cowslip</td>                <td>Meadowsweet</td></tr>
-                    <tr><td>06 Jul</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>13 Jul</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>20 Jul</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>27 Jul</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>August</td> <td>Cornflower</td>                    <td>Cowslip</td>                <td>Meadowsweet</td></tr>
-                    <tr><td>03 Aug</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>10 Aug</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>17 Aug</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>24 Aug</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>31 Aug</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>September</td> <td>Cornflower</td>                    <td>Cowslip</td>                <td>Meadowsweet</td></tr>
-                    <tr><td>07 Sep</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>14 Sep</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>21 Sep</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>28 Sep</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>October</td> <td>Cornflower</td>                    <td>Cowslip</td>                <td>Meadowsweet</td></tr>
-                    <tr><td>05 Oct</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>12 Oct</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>19 Oct</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>26 Oct</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>November</td> <td>Cornflower</td>                    <td>Cowslip</td>                <td>Meadowsweet</td></tr>
-                    <tr><td>02 Nov</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>09 Nov</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>16 Nov</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>23 Nov</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>30 Nov</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>December</td> <td>Cornflower</td>                    <td>Cowslip</td>                <td>Meadowsweet</td></tr>
-                    <tr><td>07 Dec</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>14 Dec</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>21 Dec</td> <td></td>                    <td></td>                <td></td></tr>
-                    <tr><td>28 Dec</td> <td></td>                    <td></td>                <td></td></tr>
+                    <tr><td>29 Dec 2018</td><td>160</td><td>1120</td><td>160</td><td>1120</td><td>210</td><td>1470</td></tr>
+                    <tr><td>January</td><td colspan="2">Cornflower</td><td colspan="2">Cowslip</td><td colspan="2">Meadowsweet</td></tr>
+                    <tr><td>05 Jan</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>12 Jan</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>19 Jan</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>26 Jan</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>February</td><td colspan="2">Cornflower</td><td colspan="2">Cowslip</td><td colspan="2">Meadowsweet</td></tr>
+                    <tr><td>02 Feb</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>09 Feb</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>16 Feb</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>23 Feb</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>March</td><td colspan="2">Cornflower</td><td colspan="2">Cowslip</td><td colspan="2">Meadowsweet</td></tr>
+                    <tr><td>02 Mar</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>09 Mar</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>16 Mar</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>23 Mar</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>30 Mar</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>April</td><td colspan="2">Cornflower</td><td colspan="2">Cowslip</td><td colspan="2">Meadowsweet</td></tr>
+                    <tr><td>06 Apr</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>13 Apr</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>20 Apr</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>27 Apr</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>May</td><td colspan="2">Cornflower</td><td colspan="2">Cowslip</td><td colspan="2">Meadowsweet</td></tr>
+                    <tr><td>04 May</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>11 May</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>18 May</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>25 May</td><td>160</td><td>1120</td><td>160</td><td>1120</td><td>210</td><td>1470</td></tr>
+                    <tr><td>June</td><td colspan="2">Cornflower</td><td colspan="2">Cowslip</td><td colspan="2">Meadowsweet</td></tr>
+                    <tr><td>01 Jun</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>08 Jun</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>15 Jun</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>22 Jun</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>29 Jun</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>July</td><td colspan="2">Cornflower</td><td colspan="2">Cowslip</td><td colspan="2">Meadowsweet</td></tr>
+                    <tr><td>06 Jul</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>13 Jul</td><td>160</td><td>1120</td><td>160</td><td>1120</td><td>210</td><td>1470</td></tr>
+                    <tr><td>20 Jul</td><td>160</td><td>1120</td><td>160</td><td>1120</td><td>210</td><td>1470</td></tr>
+                    <tr><td>27 Jul</td><td>160</td><td>1120</td><td>160</td><td>1120</td><td>210</td><td>1470</td></tr>
+                    <tr><td>August</td><td colspan="2">Cornflower</td><td colspan="2">Cowslip</td><td colspan="2">Meadowsweet</td></tr>
+                    <tr><td>03 Aug</td><td>160</td><td>1120</td><td>160</td><td>1120</td><td>210</td><td>1470</td></tr>
+                    <tr><td>10 Aug</td><td>160</td><td>1120</td><td>160</td><td>1120</td><td>210</td><td>1470</td></tr>
+                    <tr><td>17 Aug</td><td>160</td><td>1120</td><td>160</td><td>1120</td><td>210</td><td>1470</td></tr>
+                    <tr><td>24 Aug</td><td>160</td><td>1120</td><td>160</td><td>1120</td><td>210</td><td>1470</td></tr>
+                    <tr><td>31 Aug</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>September</td><td colspan="2">Cornflower</td><td colspan="2">Cowslip</td><td colspan="2">Meadowsweet</td></tr>
+                    <tr><td>07 Sep</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>14 Sep</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>21 Sep</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>28 Sep</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>October</td><td colspan="2">Cornflower</td><td colspan="2">Cowslip</td><td colspan="2">Meadowsweet</td></tr>
+                    <tr><td>05 Oct</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>12 Oct</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>19 Oct</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>26 Oct</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>November</td><td colspan="2">Cornflower</td><td colspan="2">Cowslip</td><td colspan="2">Meadowsweet</td></tr>
+                    <tr><td>02 Nov</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>09 Nov</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>16 Nov</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>23 Nov</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>30 Nov</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>December</td><td colspan="2">Cornflower</td><td colspan="2">Cowslip</td><td colspan="2">Meadowsweet</td></tr>
+                    <tr><td>07 Dec</td><td>95</td><td>665</td><td>95</td><td>665</td><td>115</td><td>805</td></tr>
+                    <tr><td>14 Dec</td><td>135</td><td>945</td><td>135</td><td>945</td><td>160</td><td>1120</td></tr>
+                    <tr><td>21 Dec</td><td>160</td><td>1120</td><td>160</td><td>1120</td><td>210</td><td>1470</td></tr>
+                    <tr><td>28 Dec</td><td>160</td><td>1120</td><td>160</td><td>1120</td><td>210</td><td>1470</td></tr>
+                    <tr><td>Jan 2020</td><td colspan="2">Cornflower</td><td colspan="2">Cowslip</td><td colspan="2">Meadowsweet</td></tr>
+                    <tr><td>04 Jan</td><td>160</td><td>1120</td><td>160</td><td>1120</td><td>210</td><td>1470</td></tr>
                 </tbody>
             </table>
 
